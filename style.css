@@ -1,0 +1,364 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'title';
+  src: url('fonts/AutoSquare.otf') format('openType');
+}
+
+:root{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.6rem;
+  background-color: rgb(10, 25, 47);
+}
+
+header{
+  height: 10rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 5rem 0;
+
+  color: rgb(112, 66, 218);
+  background: rgb(8,19,36);
+  background: linear-gradient(180deg, rgba(8,19,36,1) 0%, rgba(10,25,47,1) 115%);
+}
+
+header strong {
+  font-weight: 600;
+
+  color: rgb(204, 214, 246);
+}
+
+header img{
+  width: 6rem;
+}
+
+header .logo span{
+  font-family: 'title';
+  font-size: 3em;
+
+  color: rgb(112, 66, 218);
+}
+
+header .menu span{
+  padding-right: 3rem;
+
+  font-size: 1.8rem;
+}
+
+section .brand{
+  display: flex;
+
+  justify-content:space-around;
+  align-items:center;
+}
+
+.brand .greetings p:nth-child(1){
+  width: 16rem;
+
+  background-color: rgba(26,0,49,0.6);
+  color:rgb(112, 66, 218);
+
+  padding: 1rem;
+
+  border-radius: 2rem;
+
+  font-size: 2rem;
+}
+
+.brand .greetings p:nth-child(3){
+  color:rgb(204, 214, 246);
+
+  font-size: 1.8rem;
+}
+
+.brand .greetings h1{
+  font-size: 7rem;
+  font-weight: 700;
+  color: rgb(136, 146, 176);
+}
+
+.brand img{
+  width: 40rem;
+  margin-top: 10rem;
+  box-shadow: 0px 0px 50px 20px rgba(26,0,49,0.8);
+  border-radius: 50%;
+}
+
+.brand .iconsBrand i{
+  font-size: 3em;
+  background-color: rgba(26, 0, 49, 0.851);
+
+  padding: 1.2rem;
+
+  border-radius: 50%;
+}
+
+.brand .fa-react{
+  position: relative;
+  bottom: 28rem;
+  right: 40rem;
+}
+
+.brand .fa-square-js{
+  position: relative;
+  bottom: 15rem;
+  right: 11.5rem;
+}
+
+.brand .fa-node-js{
+  position: relative;
+  bottom: 6rem;
+  right: 56rem;
+}
+
+.brand .contact{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.brand button{
+  padding: 1.5rem;
+
+  background: none;
+
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 1.8rem;
+
+  border: none;
+  border-radius: 1.5rem;
+  border-left: 0.2rem solid rgb(112, 66, 218);
+  border-right: 0.2rem solid rgb(112, 66, 218);
+  border-bottom: 0.2rem solid rgb(112, 66, 218);
+
+  color: rgb(136, 146, 176);;
+}
+
+.brand a{
+  font-size: 1.8rem;
+
+  text-align: center;
+
+  color: rgb(136, 146, 176);
+}
+
+.brand a i{
+  padding-left: 1rem;
+}
+
+.brand a i{
+  color: white;
+}
+
+section .skills{
+  padding: 20rem 0 10rem 0;
+
+  color: rgb(136, 146, 176);
+
+  background: linear-gradient(180deg, rgba(10,25,47,1) 0%, rgba(73,34,162,1) 100%);
+}
+
+.skills h1{
+  border-top: 0.1rem solid rgb(112, 66, 218);
+
+  font-size: 7rem;
+  margin: 0 0 2rem 10rem;
+
+  padding-top: 4rem;
+}
+
+.skills p{
+  color:rgb(204, 214, 246);
+
+  font-size: 1.8rem;
+
+  width: 90rem;
+
+  margin: 0 0 10rem 15rem;
+}
+
+.skills .icons{
+  display: grid;
+  grid-template-areas: 
+  "a b c" 
+  "d e f"
+  "g g g";
+
+  gap: 5rem 2rem;
+
+  margin: 0 auto;
+
+  position: relative;
+  top: -82rem;
+}
+
+.skills .imgSkills{
+  text-align: center;
+
+  height: 100rem;
+}
+
+.skills .imgSkills img{  
+  width: 80%;
+}
+
+.skills .icons{
+  width: 60%;
+}
+
+.skills .icons i{
+  font-size: 10rem;
+
+  padding: 4.5rem;
+
+  border-radius: 16px;
+
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #9581f4, #23a6d5, #23d5ab);
+  box-shadow: 0px 0px 10px 2px rgb(112, 66, 218);
+  background-size: 400% 400%;
+
+  animation: gradient 10s ease infinite;
+
+  transition: all 0.3s;
+}
+
+.skills .icons i:hover{
+  transform: scale(1.1);
+}
+
+.skills .icons .fa-html5{
+  grid-area: a;
+}
+.skills .icons .fa-css3-alt{
+  grid-area: b;
+}
+.skills .icons .iconJS{
+  grid-area: c;
+}
+.skills .icons .iconReact{
+  grid-area: d;
+}
+.skills .icons .iconNode{
+  grid-area: e;
+}
+.skills .icons .fa-git-alt{
+  grid-area: f;
+}
+.skills .icons .fa-database{
+  grid-area: g;
+}
+
+.skills h1:nth-child(4){
+  border-top: 0.2rem solid rgb(112, 66, 218);
+}
+
+.progressBar{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.progress-bar {
+  background-color: rgb(136, 146, 176);
+  height: 1rem;
+  width: 90%;
+
+  border-radius: 2rem;
+
+  margin-bottom: 4rem;
+}
+
+.progress {
+  background-color: rgba(26, 0, 49, 0.8);
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+
+  border-radius: 2rem;
+}
+
+.title{
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 0.5rem;
+
+  font-size: 2rem;
+}
+
+.progressHtml{
+  width: 100%;
+}
+.progressCss{
+  width: 100%;
+}
+.progressJS{
+  width: 60%;
+}
+.progressReact{
+  width: 40%;
+}
+.progressNode{
+  width: 40%;
+}
+.progressGit{
+  width: 100%;
+}
+.progressDB{
+  width: 60%;
+}
+
+.projects{
+  background: linear-gradient(180deg, rgba(73,34,162,1) 0%, rgba(10,25,47,1) 100%);
+}
+
+.projects h1{
+  border-top: 0.2rem solid rgb(112, 66, 218);
+  color: rgb(136, 146, 176);
+
+  font-size: 7rem;
+  margin: 0 0 10rem 10rem;
+
+  padding-top: 4rem;
+}
+
+.projects a{
+  text-decoration: none;
+
+  color: rgb(136, 146, 176);
+  background-color: rgba(73,34,162,1);
+
+  font-weight: 600;
+
+  padding: 2rem;
+}
+
+.projects a img{
+  width: 50rem;
+}
+
+@keyframes gradient{
+  0%
+  {
+    background-position: 0% 50%;
+  }
+
+  50%
+  {
+    background-position: 100% 50%;
+  }
+
+  100%
+  {
+    background-position: 0% 50%;
+  }
+}
