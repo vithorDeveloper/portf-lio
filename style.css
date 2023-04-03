@@ -61,6 +61,8 @@ section .brand{
 
   justify-content:space-around;
   align-items:center;
+
+  padding: 0 4rem;
 }
 
 .brand .greetings p:nth-child(1){
@@ -86,6 +88,10 @@ section .brand{
   font-size: 7rem;
   font-weight: 700;
   color: rgb(136, 146, 176);
+
+  padding: 4rem 0;
+
+  line-height: 7rem;
 }
 
 .brand img{
@@ -93,6 +99,11 @@ section .brand{
   margin-top: 10rem;
   box-shadow: 0px 0px 50px 20px rgba(26,0,49,0.8);
   border-radius: 50%;
+}
+
+.brand .iconsBrand{
+  position: relative;
+  left: 10rem;
 }
 
 .brand .iconsBrand i{
@@ -184,9 +195,11 @@ section .skills{
 
   font-size: 1.8rem;
 
-  width: 90rem;
+  max-width: 90rem;
 
   margin-left: 15rem;
+
+  padding-right: 4rem;
 }
 
 .skills .icons{
@@ -358,7 +371,6 @@ section .skills{
   width: 45rem;
 }
 
-
 .projects .containerProjects{
   display: flex;
   flex-direction: row;
@@ -366,6 +378,10 @@ section .skills{
   flex-wrap: wrap;
 
   margin: 13rem 0 10rem;
+
+  gap: 10rem;
+
+  padding: 0 3rem;
 }
 
 .projects a{
