@@ -43,17 +43,24 @@ header img{
   width: 6rem;
 }
 
-header .logo span{
+header .logo .spanHeader,
+footer .spanFooter{
   font-family: 'title';
   font-size: 3em;
 
   color: rgb(112, 66, 218);
 }
 
-header .menu span{
+header .menu a{
+  text-decoration: none;
+
   padding-right: 3rem;
 
   font-size: 1.8rem;
+
+  cursor: pointer;
+
+  color: rgb(112, 66, 218);
 }
 
 section .brand{
@@ -103,7 +110,7 @@ section .brand{
 
 .brand .iconsBrand{
   position: relative;
-  left: 10rem;
+  left: 9rem;
 }
 
 .brand .iconsBrand i{
@@ -153,7 +160,9 @@ section .brand{
   border-right: 0.2rem solid rgb(112, 66, 218);
   border-bottom: 0.2rem solid rgb(112, 66, 218);
 
-  color: rgb(136, 146, 176);;
+  color: rgb(136, 146, 176);
+
+  cursor: pointer;
 }
 
 .brand a{
@@ -165,11 +174,8 @@ section .brand{
 }
 
 .brand a i{
-  padding-left: 1rem;
-}
-
-.brand a i{
   color: white;
+  padding-left: 1rem;
 }
 
 section .skills{
@@ -190,7 +196,8 @@ section .skills{
 }
 
 .skills p,
-.projects p{
+.projects p,
+.timeline p{
   color:rgb(204, 214, 246);
 
   font-size: 1.8rem;
@@ -248,7 +255,7 @@ section .skills{
 
   padding: 4.5rem;
 
-  height: 19rem;
+  height: 18rem;
 
   border-radius: 16px;
 
@@ -354,7 +361,8 @@ section .skills{
   background: linear-gradient(180deg, rgba(73,34,162,1) 0%, rgba(10,25,47,1) 100%);
 }
 
-.projects h1{
+.projects h1,
+.timeline h1{
   border-top: 0.3rem solid rgb(112, 66, 218);
   color: rgb(136, 146, 176);
 
@@ -403,6 +411,115 @@ section .skills{
   height: 30rem
 }
 
+.projects .containerProjects:hover div{
+  filter: blur(.3rem);
+  opacity: 1rem;
+  box-shadow: none;
+}
+
+.projects .containerProjects:hover div:hover{
+  filter: blur(0rem);
+  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 .8rem 2rem 0 rgba(0, 0, 0, 0.125);
+  background: a82c2c;
+  transition: .3s;
+}
+
+.projects .rodape{
+  background: none;
+  color: rgb(251, 61, 61);
+
+  font-size: 2.5rem;
+  font-weight: bold;
+
+  margin-left: 5rem;
+}
+
+.timeline{
+  margin-top: 15rem;
+
+}
+
+.timeline h1{
+  border-top: 1px solid rgb(112, 66, 218);
+}
+
+.timeline .containerTimeline{
+  border-left: .5rem solid rgb(112, 66, 218);
+  
+  margin: 7rem 15rem;
+}
+
+.timeline span{
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(142, 98, 245);
+}
+
+.timeline span i{
+  font-size: 4rem;
+
+  
+}
+
+.timeline .containerTimeline p{
+  margin: 2rem 0 15rem 6rem;
+
+  padding: 2rem;
+
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  box-shadow: 0px 0px 23px -6px rgba(136,146,176,1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+footer{
+  border-top: 1px solid #9581f4;
+
+  background-color: #9581f4;
+
+  padding: 2rem 0;
+
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+footer img{
+  width: 10rem;
+}
+
+footer .logoFooter {
+  padding: 0 1.5rem;
+}
+
+footer div .spanFooter{
+  color: black;
+}
+
+footer p{
+  text-align: center;
+}
+
+footer .icons i{
+  font-size: 3rem;
+
+  margin-left: 4rem;
+}
+
+footer .linha{
+  border-left: .3rem solid rgb(65, 20, 100);
+
+  height: 10rem;
+}
 @keyframes gradient{
   0%
   {
