@@ -712,12 +712,8 @@ footer .linha{
 
     display: flex;
     justify-content: center;
-  }
 
-  .containerProjects:nth-child(2),
-  .containerProjects:nth-child(3),
-  .containerProjects:nth-child(4){
-    gap: 15rem;
+    margin-bottom: 10rem;
   }
 
   .projects .rodape{
@@ -763,8 +759,6 @@ footer .linha{
   .brand .fa-node-js{
     display: none;
   }
-
-  
 }
 
 @media screen and (min-width:820px) and (max-width: 1000px){
@@ -871,4 +865,4 @@ footer .linha{
   .brand a{
     font-size: 1.5rem;
   }
-};
+}
