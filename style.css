@@ -445,7 +445,6 @@ section .skills{
 
 .timeline{
   margin-top: 15rem;
-
 }
 
 .timeline h1{
@@ -471,8 +470,6 @@ section .skills{
 
 .timeline span i{
   font-size: 4rem;
-
-  
 }
 
 .timeline .containerTimeline p{
@@ -533,6 +530,28 @@ footer .linha{
   display: none
 }
 
+.ativo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+
+    border-radius: 5rem;
+
+    gap: 2rem;
+    
+    background: #9581f4;
+  }
+
+.menuMob a{
+    text-decoration: none;
+    color: #10465a;
+
+    font-size: 1.8rem;
+}
+
+
 @keyframes gradient{
   0%
   {
@@ -569,6 +588,12 @@ footer .linha{
     display: block;
     margin-right: 1rem;
     font-size: 3rem;
+  }
+
+  header button{
+    background: none;
+    border: none;
+    cursor: pointer;
   }
 
   header .menu{
@@ -846,4 +871,4 @@ footer .linha{
   .brand a{
     font-size: 1.5rem;
   }
-}
+};
