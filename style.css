@@ -399,7 +399,7 @@ section .skills{
   padding: 0 3rem;
 }
 
-.projects a{
+.projects .containerProjects a{
   text-decoration: none;
 
   color: rgb(204, 214, 246);
@@ -433,14 +433,28 @@ section .skills{
   transition: .3s;
 }
 
-.projects .rodape{
-  background: none;
-  color: rgb(251, 61, 61);
+.containerButton{
+  display: flex;
+  justify-content: center;
+}
 
-  font-size: 2.5rem;
-  font-weight: bold;
+.containerButton button{
+  background-color: rgb(255, 71, 71);
 
-  margin-left: 5rem;
+  border: none;
+  border-radius: 1rem;
+  
+  width: 60%;
+
+  padding: 1rem;
+}
+
+.containerButton button a{
+  color: white;
+
+  text-decoration: none;
+
+  font-size: 2rem;
 }
 
 .timeline{
@@ -716,12 +730,8 @@ footer .linha{
     margin-bottom: 10rem;
   }
 
-  .projects .rodape{
-    text-align:center;
-
-    font-size: 1.5rem;
-
-    margin: 0 auto;
+  .containerButton button{
+  width: 80%;
   }
 
   .timeline .containerTimeline{
